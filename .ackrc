@@ -1,0 +1,2 @@
+--type-set=mojo=.css,.pl,.pm,.html,.js,.tt,.ep,.conf
+--type-set=conf=.conf
