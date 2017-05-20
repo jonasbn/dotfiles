@@ -1,0 +1,6 @@
+# Own completions should go into ~/.bash_completion.d/
+# REF: https://serverfault.com/questions/506612/standard-place-for-user-defined-bash-completion-d-scripts
+
+for bcfile in ~/.bash_completion.d/* ; do
+  . $bcfile
+done
