@@ -6,6 +6,12 @@ Configuration file for [`ack`](http://beyondgrep.com/)
 
 See my **[til](https://jonasbn.github.io/til/ack/define_a_custom_search_filetype_scope.html)**
 
+## .bash_completion
+
+Sourcing script for `bash` completions.
+
+See my **[til](https://jonasbn.github.io/til/bash/create_dir_for_own_completions.html)**
+
 ## .editorconfig
 
 File for [EditorConfig](http://editorconfig.org/).
