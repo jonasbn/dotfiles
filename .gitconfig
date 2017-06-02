@@ -1,0 +1,36 @@
+# This is Git's per-user configuration file.
+[core]
+    excludesfile = /Users/jonasbn/.gitignore_global
+    pager = diff-so-fancy | less --tabs=4 -RFX
+# user information etc.
+[include]
+    path = ~/.gitconfig.local
+[push]
+    default = simple
+[filter "lfs"]
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge %f
+    required = true
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path =
+[mergetool "sourcetree"]
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
+[alias]
+    lsch = "!f() { git diff --name-status -r "HEAD~$1"; }; f"
+    # https://hackernoon.com/moving-from-beginner-to-slightly-more-advanced-git-with-aliases-89e30a6accf4
+    a = add
+    b = branch
+    c = commit --message
+    ca = commit --all --message
+    cl = clone
+    co = checkout
+    d = diff
+    f = fetch
+    i = init
+    o = open # see: https://github.com/paulirish/git-open ♥
+    p = push
+    pt = push --tags
+    s = status
+    t = tag
