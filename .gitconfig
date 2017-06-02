@@ -1,8 +1,6 @@
-# This is Git's per-user configuration file.
 [core]
     excludesfile = /Users/jonasbn/.gitignore_global
     pager = diff-so-fancy | less --tabs=4 -RFX
-# user information etc.
 [include]
     path = ~/.gitconfig.local
 [push]
@@ -18,8 +16,9 @@
     cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
     trustExitCode = true
 [alias]
+    # REF: https://coderwall.com/p/8rtfgg/git-alias-to-show-affected-files-in-last-n-commits
     lsch = "!f() { git diff --name-status -r "HEAD~$1"; }; f"
-    # https://hackernoon.com/moving-from-beginner-to-slightly-more-advanced-git-with-aliases-89e30a6accf4
+    # REF: https://hackernoon.com/moving-from-beginner-to-slightly-more-advanced-git-with-aliases-89e30a6accf4
     a = add
     b = branch
     c = commit --message
