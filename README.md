@@ -4,13 +4,13 @@
 
 Configuration file for [`ack`](http://beyondgrep.com/)
 
-See my **[til](https://jonasbn.github.io/til/ack/define_a_custom_search_filetype_scope.html)**
+See my _[Today I Learned](https://jonasbn.github.io/til/ack/define_a_custom_search_filetype_scope.html)_
 
 ## .bash_completion
 
 Sourcing script for `bash` completions.
 
-See my **[til](https://jonasbn.github.io/til/bash/create_dir_for_own_completions.html)**
+See my _[Today I Learned](https://jonasbn.github.io/til/bash/create_dir_for_own_completions.html)_
 
 ## .editorconfig
 
