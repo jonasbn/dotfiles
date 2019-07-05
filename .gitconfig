@@ -1,20 +1,20 @@
 [core]
-    excludesfile = /Users/jonasbn/.gitignore_global
-    pager = diff-so-fancy | less --tabs=4 -RFX
+    excludesfile = ~/.gitignore_global
 [include]
     path = ~/.gitconfig.local
+[includeIf "gitdir:~/develop/git-dkhm/"]
+    path = .gitconfig-dkhm
+[includeIf "gitdir:~/develop/gitlab-dkhm/"]
+    path = .gitconfig-dkhm
+[includeIf "gitdir:~/develop/github-dkhm/"]
+    path = .gitconfig-dkhm
 [push]
     default = simple
 [filter "lfs"]
-    clean = git-lfs clean %f
-    smudge = git-lfs smudge %f
-    required = true
-[difftool "sourcetree"]
-    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-    path =
-[mergetool "sourcetree"]
-    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-    trustExitCode = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
 [alias]
     # REF: https://coderwall.com/p/8rtfgg/git-alias-to-show-affected-files-in-last-n-commits
     lsch = "!f() { git diff --name-status -r "HEAD~$1"; }; f"
@@ -33,3 +33,5 @@
     pt = push --tags
     s = status
     t = tag
+[init]
+	templatedir = ~/.git-templates
