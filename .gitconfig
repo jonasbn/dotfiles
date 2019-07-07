@@ -2,8 +2,10 @@
     excludesfile = ~/.gitignore_global
 [include]
     path = ~/.gitconfig.local
+# Work
 [includeIf "gitdir:~/develop/gitlab-dkhm/"]
     path = .gitconfig-dkhm
+# DK Hostmaster organisation: https://github.com/DK-Hostmaster
 [includeIf "gitdir:~/develop/github-dkhm/"]
     path = .gitconfig-dkhm
 [push]
