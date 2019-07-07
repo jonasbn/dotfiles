@@ -2,8 +2,6 @@
     excludesfile = ~/.gitignore_global
 [include]
     path = ~/.gitconfig.local
-[includeIf "gitdir:~/develop/git-dkhm/"]
-    path = .gitconfig-dkhm
 [includeIf "gitdir:~/develop/gitlab-dkhm/"]
     path = .gitconfig-dkhm
 [includeIf "gitdir:~/develop/github-dkhm/"]
