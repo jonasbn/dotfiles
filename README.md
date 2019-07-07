@@ -24,7 +24,7 @@ Configuration file for `git`
 
 Checkout the cool aliases in the `[alias]` section, they are not all mine, I list resources where I have them. The `[include]` section, enabling you to isolate personal information in a `~/.gitconfig.local` is quite useful.
 
-Do also see my _[Today I Learned](https://jonasbn.github.io/til/git/maintain_multiple_git_ids.html)
+Do also see my _[Today I Learned](https://jonasbn.github.io/til/git/maintain_multiple_git_ids.html)_
 
 # License
 
