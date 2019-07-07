@@ -11,10 +11,10 @@
 [push]
     default = simple
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
 [alias]
     # REF: https://coderwall.com/p/8rtfgg/git-alias-to-show-affected-files-in-last-n-commits
     lsch = "!f() { git diff --name-status -r "HEAD~$1"; }; f"
@@ -34,4 +34,4 @@
     s = status
     t = tag
 [init]
-	templatedir = ~/.git-templates
+    templatedir = ~/.git-templates
