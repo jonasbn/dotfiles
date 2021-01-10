@@ -1,20 +1,27 @@
 [core]
     excludesfile = ~/.gitignore_global
+    pager = delta # see delta section below
+
 [include]
     path = ~/.gitconfig.local
+
 # Work
 [includeIf "gitdir:~/develop/gitlab-dkhm/"]
     path = .gitconfig-dkhm
+
 # DK Hostmaster organisation: https://github.com/DK-Hostmaster
 [includeIf "gitdir:~/develop/github-dkhm/"]
     path = .gitconfig-dkhm
+
 [push]
     default = simple
+
 [filter "lfs"]
     clean = git-lfs clean -- %f
     smudge = git-lfs smudge -- %f
     process = git-lfs filter-process
     required = true
+
 [alias]
     # REF: https://coderwall.com/p/8rtfgg/git-alias-to-show-affected-files-in-last-n-commits
     lsch = "!f() { git diff --name-status -r "HEAD~$1"; }; f"
@@ -34,5 +41,27 @@
     pu = pull
     s = status
     t = tag
+
 [init]
     templatedir = ~/.git-templates
+
+[pull]
+	rebase = false
+
+[difftool]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\" &
+    prompt = false
+
+[mergetool]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    prompt = false
+
+[interactive]
+    diffFilter = delta --color-only
+
+# https://github.com/dandavison/delta
+[delta]
+    features = side-by-side line-numbers decorations
+    line-numbers = true
+    side-by-side = true
+    syntax-theme = Nord
