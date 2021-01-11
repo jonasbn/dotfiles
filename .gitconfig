@@ -45,6 +45,9 @@
 [init]
     templatedir = ~/.git-templates
 
+[submodule]
+	recurse = true
+
 [pull]
 	rebase = false
 
