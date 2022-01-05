@@ -28,6 +28,12 @@ Checkout the cool aliases in the `[alias]` section, they are not all mine, I lis
 
 Do also see my _[Today I Learned](https://jonasbn.github.io/til/git/maintain_multiple_git_ids.html)_
 
+## starship.toml
+
+Configuration file for **Starship**
+
+It is deployed to: '.config/starship.toml`
+
 # License
 
 This is made available under the MIT license, see separate license file.
