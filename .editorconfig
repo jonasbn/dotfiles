@@ -4,11 +4,15 @@
 # repositories - YAY!
 root = true
 
-# All file types
+# All file types, defaults, if changes are made here, please review
+# below file-type specific sactions, which might require overrides
 [*]
 
 # Preferred characterset encoding
 charset = utf-8
+
+# Setting max line length to off
+max_line_length = off
 
 # Preferred indentation style
 indent_style = space
@@ -16,12 +20,50 @@ indent_size = 4
 
 # Unix-style newlines with a newline ending the file
 end_of_line = lf
-insert_final_newline = true
+insert_final_newline = false
 
 # Trim possible trailing whitespace
 trim_trailing_whitespace = true
 
-# Markdown files
-[*.md]
-trim_trailing_whitespace = false
+[Makefile]
+# Tab indentation (no size specified)
 indent_style = tab
+
+# Markdown files
+# REF: https://jonasbn.github.io/til/editorconfig/markdown.html
+[*.md]
+
+# Do not trim possible trailing whitespace
+# Ending a line with two spaces creates a linebreak, by enabling trimming of trailing whitespace this
+# Markdown feature is disabled
+# REF: https://daringfireball.net/projects/markdown/syntax#block
+trim_trailing_whitespace = false
+
+# SQL files
+[*.sql]
+
+# Preferred characterset encoding
+charset = latin1
+
+# XML files
+# REF: https://jonasbn.github.io/til/editorconfig/xml.html
+[*.{xml,xsd}]
+
+# Setting max line length to off
+max_line_length = off
+
+# Indentation
+indent_style = space
+indent_size = 2
+
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Perl files
+# REF: https://jonasbn.github.io/til/editorconfig/perl.html
+[*.{pl,pm,t,PL}]
+# See defaults
+
+[*.{yaml,yml}]
+indent_style = space
+indent_size = 2
