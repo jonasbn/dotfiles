@@ -32,7 +32,7 @@ Do also see my _[Today I Learned](https://jonasbn.github.io/til/git/maintain_mul
 
 Configuration file for **Starship**
 
-It is deployed to: '.config/starship.toml`
+It is deployed to: `.config/starship.toml`
 
 # License
 
