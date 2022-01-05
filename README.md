@@ -30,9 +30,11 @@ Do also see my _[Today I Learned](https://jonasbn.github.io/til/git/maintain_mul
 
 ## starship.toml
 
-Configuration file for **Starship**
+Configuration file for [Starship](https://starship.rs/).
 
 It is deployed to: `.config/starship.toml`
+
+Do also see my _[Today I Learned](http://jonasbn.github.io/til/starship/use_starship.html)_
 
 # License
 
