@@ -16,7 +16,7 @@ See my _[Today I Learned](https://jonasbn.github.io/til/bash/create_dir_for_own_
 
 File for [EditorConfig](http://editorconfig.org/).
 
-I am currently using **EditorConfig** with the **SublimeText** [plugin](https://github.com/sindresorhus/editorconfig-sublime) and [the collection of snippets](https://github.com/mfuentesg/EditorConfigSnippets).
+I am currently using **EditorConfig** with **VScode**, `eclint`and lately `ec` since `eclint` is not longer actively developed.
 
 Do also see my _[Today I Learned](https://jonasbn.github.io/editorconfig/use_editorconfig.html)_
 
