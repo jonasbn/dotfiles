@@ -18,6 +18,8 @@ File for [EditorConfig](http://editorconfig.org/).
 
 I am currently using **EditorConfig** with the **SublimeText** [plugin](https://github.com/sindresorhus/editorconfig-sublime) and [the collection of snippets](https://github.com/mfuentesg/EditorConfigSnippets).
 
+Do also see my _[Today I Learned](https://jonasbn.github.io/editorconfig/use_editorconfig.html)_
+
 ## .gitconfig
 
 Configuration file for `git`
