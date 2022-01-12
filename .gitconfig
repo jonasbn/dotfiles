@@ -5,14 +5,6 @@
 [include]
     path = ~/.gitconfig.local
 
-# Work
-[includeIf "gitdir:~/develop/gitlab-dkhm/"]
-    path = .gitconfig-dkhm
-
-# DK Hostmaster organisation: https://github.com/DK-Hostmaster
-[includeIf "gitdir:~/develop/github-dkhm/"]
-    path = .gitconfig-dkhm
-
 [push]
     default = simple
 
@@ -35,7 +27,7 @@
     d = diff
     f = fetch
     i = init
-    o = open # see: https://github.com/paulirish/git-open ♥
+    o = open # REF: https://github.com/paulirish/git-open ♥
     p = push
     pt = push --tags
     pu = pull
@@ -62,7 +54,8 @@
 [interactive]
     diffFilter = delta --color-only
 
-# https://github.com/dandavison/delta
+# REF: https://github.com/dandavison/delta
+# Installed and maintained from Homebrew
 [delta]
     features = side-by-side line-numbers decorations
     line-numbers = true
